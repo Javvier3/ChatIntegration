@@ -4,8 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         var message = $('#message').val();
         if (message) {
-            $('.chat-message:last').after('<div class="chat-message"> <i class="bi bi-person-fill"  style="color: #09B425;"></i> <b>Usuario: </b>' + message + '</div>');
-            //$('.chat-message:last').after('<div class="col-12 col-lg-4"></div> <div class="chat-message col-12 col-lg-8"> <i class="bi bi-person-fill" style="color: #09B425;"></i> <b>Usuario: </b>' + message + '</div>');
+            $('.chat-message:last').after('<div class="col-12 col-lg-4"></div><div class="chat-message col-12 col-lg-8"><i class="bi bi-person-fill" style="color: #09B425;"></i> <b>Usuario: </b>' + message + '</div>')
             $('#message').val('');
         }
     });
@@ -18,9 +17,7 @@ const chatContainer = document.getElementById('chat-container');
 toggleChatButton.addEventListener('click', () => {
     if (chatContainer.style.display === 'none') {
         chatContainer.style.display = 'block';
-        toggleChatButton.textContent = 'Hide';
     } else {
         chatContainer.style.display = 'none';
-        toggleChatButton.textContent = 'Show';
     }
 });

@@ -42,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(2px 2px 4px #000000);
 }
 
 #chatbot-header {
@@ -51,4 +52,14 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;
+}
+.btn-chat:hover{
+    opacity: 0.8;
+}
+/* Estilo para div */
+.diva {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px ;
+    border-radius: 5px;
 }
